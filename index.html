@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wishi yu, wishi me, washmi neyney!</title>
+    <style>
+        body {
+          background-color: #ffe6e6;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+        . card {
+          background: white;
+          padding: 40px;
+          border-radius: 20px;
+          box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+          text-align: center;
+          max-width: 400px;
+        }
+        h1 {
+          color: #ff4d4d;
+          font-size: 2.5rem;
+        }
+        .btn:hover {
+          background-color: #e60000;
+        }
+        .secret-message {
+          display: none;
+          margin-top: 20px;
+          font-size: 1.3rem;
+          color: #b30000;
+          font-weight: bold;
+          animation: pop 0.5s ease-out;
+        }
+        @keyframes pop {
+          0% { transform: scale(0.8); opacity: 0; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+      </style>
+    </head>
+    <body>
+
+      <div class="card">
+        <h1>🎉 happy birthday, queenrizz! 🎂</h1>
+        <p>I know, yeah yeah, qtπ ka. Imoha sad na. Now, i-tap ang button sa baba hahaha! ✨</p>
+
+        <button class="btn" id="surpriseBtn">Click Me!</button>
+
+        <div class="secret-message" id="secretNote">
+          Ikaw ang bugtong itik nagkapa-kapa sa among limpyo ug dili baho nga kanal. Ikaw lang talaga. charrizzzz. btw, I just wanna tell you that you are loved, you're worth it, you're valuable, and that you are doing just fine. please po do not worry to much about the future as we are just too young and dumb hahah and broke. yah. i know God has His plans ready for you, all you have to do is trust Him fully. lahams kita bebe. ew. sana makahanap ka ng magmamahal sayo, date to marry ganon! habaduuuuuu! bye!
+        </div>
+      </div>
+
+      <script>
+        document.getElementById('surpriseBtn').addEventListener('click', function() {
+          document.getElementById('secretNote').style.display = 'block';
+          this.style.display = 'none';
+        });
+      </script>
+
+    </body>
+    </html>
