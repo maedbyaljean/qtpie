@@ -39,13 +39,17 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
-            padding: 40px 30px;
+            padding: 30px 25px;
             border-radius: 30px;
             box-shadow: 0 20px 40px rgba(255, 182, 193, 0.3);
             text-align: center;
-            max-width: 380px;
+            width: 90%;            /* Adapts to phone screens */
+            max-width: 450px;      /* Made it wider for long text */
+            max-height: 80vh;      /* Limits height so it doesn't leave the screen */
+            display: flex;
+            flex-direction: column;
             border: 2px solid #fff;
             animation: cardLoad 1.2s ease-out;
             position: relative;
@@ -86,10 +90,14 @@
 
         .secret-message {
             display: none;
-            margin-top: 25px;
-            font-size: 1.2rem;
+            margin-top: 20px;
+            font-size: 1.1rem;
             color: #d14d72;
             line-height: 1.6;
+            overflow-y: auto;      /* Adds a cute scrollbar if text is too long! */
+            padding-right: 5px;    /* Space for the scrollbar */
+            max-height: 40vh;      /* Limits text box height so it scrolls perfectly */
+            text-align: left;      /* Makes long paragraphs much easier to read */
             animation: popUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
 
@@ -133,11 +141,11 @@
         <h1>𝒉𝒂𝒑𝒑𝒚 𝒃𝒊𝒓𝒕𝒉𝒅𝒂𝒚, 𝒓𝒆𝒆𝒆𝒆𝒊𝒊𝒊𝒈𝒈𝒈𝒏𝒏𝒏𝒏𝒏! 💕</h1>
         <p>𝑺𝒆𝒏𝒅𝒊𝒏𝒈 𝒚𝒐𝒖 𝒕𝒉𝒆 𝒃𝒊𝒈𝒈𝒆𝒔𝒕 𝒗𝒊𝒓𝒕𝒖𝒂𝒍 𝒉𝒖𝒈 𝒐𝒏 𝒚𝒐𝒖𝒓 𝒔𝒑𝒆𝒄𝒊𝒂𝒍 𝒅𝒂𝒚!</p>
         
-        <button class="btn" id="surpriseBtn">i-open plsplspls</button>
+        <button class="btn" id="surpriseBtn">𝒐𝒘𝒑𝒑𝒆𝒆𝒆𝒏𝒏𝒏!</button>
         
         <div class="secret-message" id="secretNote">
             𝓱𝓪𝓹𝓹𝔂 𝓫𝓲𝓻𝓽𝓱𝓭𝓪𝔂! <br>
-            <strong>𝐚𝐧𝐠 𝐚𝐤𝐢𝐧𝐠 𝐡𝐢𝐥𝐢𝐧𝐠 𝐚𝐲 𝐦𝐚𝐠𝐢𝐧𝐠 𝐦𝐚𝐬𝐚𝐲𝐚 𝐤𝐚 𝐬𝐚 𝐚𝐫𝐚𝐰 𝐧𝐠 𝐢𝐲𝐨𝐧𝐠 𝐤𝐚𝐚𝐫𝐚𝐰𝐚𝐧 𝐡𝐚𝐡𝐚𝐡𝐚𝐡</strong> <br>
+            <strong>𝒃𝒅𝒂𝒚 𝒎𝒐 𝒑𝒂𝒍𝒂? 𝒌! </strong> <br>
             𝑯𝒂𝒑𝒑𝒚 𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚, 𝑹𝒆𝒊𝒈𝒏𝒂 𝑹𝒆𝒆𝒛𝒆! 𝑻𝒉𝒊𝒔 𝒊𝒔 𝒎𝒚 𝒔𝒊𝒎𝒑𝒍𝒆 𝒘𝒂𝒚 𝒐𝒇 𝒕𝒉𝒂𝒏𝒌𝒊𝒏𝒈 𝒚𝒐𝒖 𝒇𝒐𝒓 𝒃𝒆𝒊𝒏𝒈 𝒎𝒚 𝒇𝒓𝒊𝒆𝒏𝒅.
             𝑭𝒊𝒓𝒔𝒕 𝒐𝒇 𝒂𝒍𝒍, 𝑰 𝒘𝒂𝒏𝒕 𝒚𝒐𝒖 𝒕𝒐 𝒌𝒏𝒐𝒘 𝒕𝒉𝒂𝒕 𝒚𝒐𝒖 𝒂𝒓𝒆 𝒂𝒏 𝒂𝒎𝒂𝒛𝒊𝒏𝒈 𝒑𝒆𝒓𝒔𝒐𝒏, 𝒚𝒐𝒖'𝒓𝒆 𝒘𝒐𝒓𝒕𝒉 𝒊𝒕, 𝒚𝒐𝒖'𝒓𝒆 𝒗𝒂𝒍𝒖𝒂𝒃𝒍𝒆, 𝒂𝒏𝒅 𝒚𝒐𝒖 𝒂𝒓𝒆 𝒂 𝒗𝒆𝒓𝒚 𝒈𝒐𝒐𝒅 𝒑𝒆𝒓𝒔𝒐𝒏. 𝑰 𝒘𝒂𝒏𝒏𝒂 𝒕𝒉𝒂𝒏𝒌 𝒚𝒐𝒖 𝒇𝒐𝒓 𝒃𝒆𝒊𝒏𝒈 𝒎𝒚 𝒇𝒓𝒊𝒆𝒏𝒅 𝒂𝒏𝒅 𝒇𝒐𝒓 𝒔𝒊𝒎𝒑𝒍𝒚 𝒆𝒙𝒊𝒔𝒕𝒊𝒏𝒈 𝒊𝒏 𝒕𝒉𝒊𝒔 𝒘𝒐𝒓𝒍𝒅 𝒂𝒏𝒅 𝒌𝒏𝒐𝒘 𝒚𝒐𝒖. 𝒀𝒐𝒖 𝒂𝒓𝒆 𝒔𝒖𝒄𝒉 𝒂 𝒘𝒐𝒏𝒅𝒆𝒓𝒇𝒖𝒍 𝒘𝒐𝒎𝒂𝒏 𝒂𝒏𝒅 𝒔𝒐 𝒔𝒕𝒓𝒐𝒏𝒈 𝒇𝒐𝒓 𝒂 𝒈𝒊𝒓𝒍 𝒊𝒏 𝒉𝒆𝒓 𝟐𝟎𝒕𝒉 𝒃𝒅𝒂𝒚!
             𝑻𝒉𝒊𝒏𝒈𝒔 𝒄𝒐𝒖𝒍𝒅 𝒉𝒂𝒑𝒑𝒆𝒏 𝒋𝒖𝒅 𝒊𝒏 𝒕𝒉𝒊𝒔 𝒍𝒊𝒇𝒆𝒕𝒊𝒎𝒆, 𝒓𝒆𝒚𝒏, 𝒂𝒏𝒅 𝒔𝒐𝒎𝒆𝒕𝒊𝒎𝒆𝒔 𝒘𝒆 𝒃𝒆𝒄𝒂𝒎𝒆 𝒑𝒂𝒓𝒂𝒏𝒐𝒊𝒅 𝒌𝒂𝒚 𝒘𝒂𝒍𝒂 𝒏𝒂𝒕𝒂 𝒌𝒂𝒃𝒂𝒍𝒐 𝒖𝒏𝒔𝒂 𝒂𝒕𝒐𝒏𝒈 𝒉𝒊𝒎𝒖𝒐𝒏. 𝒚𝒆𝒔! 𝑩𝒖𝒕 𝒏𝒐𝒘, 𝑰 𝒘𝒂𝒏𝒏𝒂 𝒕𝒆𝒍𝒍 𝒚𝒐𝒖 𝒕𝒉𝒂𝒕 𝒚𝒐𝒖 𝒂𝒓𝒆 𝒅𝒐𝒊𝒏𝒈 𝒋𝒖𝒔𝒕 𝒇𝒊𝒏𝒆. 𝑫𝒐 𝒏𝒐𝒕 𝒘𝒐𝒓𝒓𝒚 𝒕𝒐𝒐 𝒎𝒖𝒄𝒉 𝒂𝒃𝒐𝒖𝒕 𝒕𝒉𝒆 𝒕𝒉𝒊𝒏𝒈𝒔 𝒚𝒐𝒖 𝒄𝒂𝒏'𝒕 𝒄𝒐𝒏𝒕𝒓𝒐𝒍. 𝑰 𝒌𝒏𝒐𝒘 𝒕𝒉𝒂𝒕 𝑮𝒐𝒅 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒉𝒂𝒔 𝑯𝒊𝒔 𝒑𝒍𝒂𝒏𝒔 𝒇𝒐𝒓 𝒚𝒐𝒖 𝒂𝒏𝒅 𝒂𝒍𝒍 𝒚𝒐𝒖 𝒈𝒐𝒕𝒕𝒂 𝒅𝒐 𝒊𝒔 𝒕𝒐 𝒕𝒓𝒖𝒔𝒕 𝑯𝒊𝒎, 𝒇𝒖𝒍𝒍𝒚. 𝑳𝒊𝒇𝒆 𝒎𝒊𝒈𝒉𝒕 𝒈𝒆𝒕 𝒉𝒂𝒓𝒅 𝒑𝒆𝒓𝒐 𝒍𝒂𝒃𝒂𝒏 𝒍𝒂𝒏𝒈 𝒈𝒚𝒂𝒑𝒐𝒏. 𝑷𝒍𝒆𝒂𝒔𝒆 𝒑𝒖𝒅 𝒅𝒐𝒏'𝒕 𝒇𝒐𝒓𝒈𝒆𝒕 𝒕𝒉𝒂𝒕 𝒚𝒐𝒖 𝒉𝒂𝒗𝒆 𝒚𝒐𝒖'𝒓𝒆 𝒅𝒖𝒎𝒃 𝒇𝒓𝒊𝒆𝒏𝒅𝒔 𝒐𝒗𝒆𝒓 𝒉𝒆𝒓𝒆 𝒓𝒆𝒂𝒅𝒚 𝒕𝒐 𝒍𝒂𝒖𝒈𝒉 𝒘𝒊𝒕𝒉 𝒚𝒐𝒖 𝒂𝒏𝒅 𝒐𝒇𝒇𝒆𝒓 𝒐𝒖𝒓 𝒔𝒉𝒐𝒖𝒍𝒅𝒆𝒓𝒔 𝒇𝒐𝒓 𝒚𝒐𝒖 𝒕𝒐 𝒍𝒆𝒂𝒏 𝒐𝒏. 𝑰 𝒌𝒏𝒐𝒘 𝒕𝒂𝒂𝒔 𝒌𝒂 𝒂𝒏𝒅 𝒎𝒆𝒅𝒋𝒐 𝒍𝒊𝒔𝒐𝒅 𝒔𝒉𝒂 𝒏𝒐 𝒑𝒆𝒓𝒐 𝒖𝒏𝒔𝒂𝒐𝒏 𝒕𝒂 𝒎𝒂𝒏 𝒉𝒂𝒉𝒂𝒉. 
@@ -149,18 +157,21 @@
 
         <div class="music-box">
             <audio id="bgMusic" loop src="https://music.youtube.com/watch?v=QQXZyf0OJpI"></audio>
-            <p style="font-size: 0.8rem; opacity: 0.7;">kuan</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;">...</p>
         </div>
     </div>
 
     <script>
-        document.getElementById('surpriseBtn').addEventListener('click', function() {
-            document.getElementById('secretNote').style.display = 'block';
-            this.style.display = 'none';
+        document.getElementById('secretNote').style.display = 'block';
+        this.style.display = 'none';
 
-            const music = document.getElementById('bgMusic');
-            music.volume = 0.4;
-            music.play().catch(error => console.log("Music autoplay blocked, waiting for interaction"));
+        window.open("https://open.spotify.com/track/1mQRQlbf1nXbazPEuSyij8", "_blank");
+
+        for (let i = 0; i < 40; i++) {
+        createConfetti();
+    }
+});
+
 
             for (let i = 0; i < 40; i++) {
                 createConfetti();
