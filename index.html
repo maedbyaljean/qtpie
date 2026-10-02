@@ -3,65 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wishi yu, wishi me, washmi neyney!</title>
+    <title>𝓱𝓮𝓵𝓵𝓵𝓸𝓸𝓸𝓸𝓸𝓸𝓸!!!</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    
     <style>
         body {
-          background-color: #ffe6e6;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          margin: 0;
+            background: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 100%);
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
         }
-        . card {
-          background: white;
-          padding: 40px;
-          border-radius: 20px;
-          box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-          text-align: center;
-          max-width: 400px;
+
+        body::before {
+            content: " ♡ ";
+            position: absolute;
+            font-size: 2rem;
+            top: 10%; left: 10%;
+            opacity: 0.3;
+            animation: float 4s ease-in-out infinite;
         }
+        body::after {
+            content: "🌸";
+            position: absolute;
+            font-size: 2rem;
+            bottom: 15%; right: 15%;
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(255, 182, 193, 0.3);
+            text-align: center;
+            max-width: 380px;
+            border: 2px solid #fff;
+            animation: cardLoad 1.2s ease-out;
+            position: relative;
+            z-index: 10;
+        }
+
         h1 {
-          color: #ff4d4d;
-          font-size: 2.5rem;
+            font-family: 'Fredoka', sans-serif;
+            color: #ff7396;
+            font-size: 2.3rem;
+            margin-bottom: 10px;
         }
+
+        p {
+            color: #7a6e71;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background-color: #ff7396;
+            color: white;
+            border: none;
+            padding: 14px 35px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(255, 115, 150, 0.3);
+            transition: all 0.3s ease;
+        }
+
         .btn:hover {
-          background-color: #e60000;
+            background-color: #ff5580;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(255, 115, 150, 0.4);
         }
+
         .secret-message {
-          display: none;
-          margin-top: 20px;
-          font-size: 1.3rem;
-          color: #b30000;
-          font-weight: bold;
-          animation: pop 0.5s ease-out;
+            display: none;
+            margin-top: 25px;
+            font-size: 1.2rem;
+            color: #d14d72;
+            line-height: 1.6;
+            animation: popUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
-        @keyframes pop {
-          0% { transform: scale(0.8); opacity: 0; }
-          100% { transform: scale(1); opacity: 1; }
+
+        .music-box {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #a39599;
         }
-      </style>
-    </head>
-    <body>
 
-      <div class="card">
-        <h1>🎉 happy birthday, queenrizz! 🎂</h1>
-        <p>I know, yeah yeah, qtπ ka. Imoha sad na. Now, i-tap ang button sa baba hahaha! ✨</p>
+        .confetti {
+            position: absolute;
+            top: -20px;
+            font-size: 24px;
+            user-select: none;
+            pointer-events: none;
+            animation: fall linear forwards;
+        }
 
-        <button class="btn" id="surpriseBtn">Click Me!</button>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        @keyframes cardLoad {
+            0% { opacity: 0; transform: scale(0.9) translateY(20px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        @keyframes popUp {
+            0% { opacity: 0; transform: scale(0.7); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(105vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
 
+    <div class="card">
+        <h1>𝒉𝒂𝒑𝒑𝒚 𝒃𝒊𝒓𝒕𝒉𝒅𝒂𝒚, 𝒓𝒆𝒆𝒆𝒆𝒊𝒊𝒊𝒈𝒈𝒈𝒏𝒏𝒏𝒏𝒏! 💕</h1>
+        <p>𝑺𝒆𝒏𝒅𝒊𝒏𝒈 𝒚𝒐𝒖 𝒕𝒉𝒆 𝒃𝒊𝒈𝒈𝒆𝒔𝒕 𝒗𝒊𝒓𝒕𝒖𝒂𝒍 𝒉𝒖𝒈 𝒐𝒏 𝒚𝒐𝒖𝒓 𝒔𝒑𝒆𝒄𝒊𝒂𝒍 𝒅𝒂𝒚!</p>
+        
+        <button class="btn" id="surpriseBtn">i-open plsplspls</button>
+        
         <div class="secret-message" id="secretNote">
-          Ikaw ang bugtong itik nagkapa-kapa sa among limpyo ug dili baho nga kanal. Ikaw lang talaga. charrizzzz. btw, I just wanna tell you that you are loved, you're worth it, you're valuable, and that you are doing just fine. please po do not worry to much about the future as we are just too young and dumb hahah and broke. yah. i know God has His plans ready for you, all you have to do is trust Him fully. lahams kita bebe. ew. sana makahanap ka ng magmamahal sayo, date to marry ganon! habaduuuuuu! bye!
+            𝓱𝓪𝓹𝓹𝔂 𝓫𝓲𝓻𝓽𝓱𝓭𝓪𝔂! <br>
+            <strong>𝐚𝐧𝐠 𝐚𝐤𝐢𝐧𝐠 𝐡𝐢𝐥𝐢𝐧𝐠 𝐚𝐲 𝐦𝐚𝐠𝐢𝐧𝐠 𝐦𝐚𝐬𝐚𝐲𝐚 𝐤𝐚 𝐬𝐚 𝐚𝐫𝐚𝐰 𝐧𝐠 𝐢𝐲𝐨𝐧𝐠 𝐤𝐚𝐚𝐫𝐚𝐰𝐚𝐧 𝐡𝐚𝐡𝐚𝐡𝐚𝐡</strong> <br>
+            𝑯𝒂𝒑𝒑𝒚 𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚, 𝑹𝒆𝒊𝒈𝒏𝒂 𝑹𝒆𝒆𝒛𝒆! 𝑻𝒉𝒊𝒔 𝒊𝒔 𝒎𝒚 𝒔𝒊𝒎𝒑𝒍𝒆 𝒘𝒂𝒚 𝒐𝒇 𝒕𝒉𝒂𝒏𝒌𝒊𝒏𝒈 𝒚𝒐𝒖 𝒇𝒐𝒓 𝒃𝒆𝒊𝒏𝒈 𝒎𝒚 𝒇𝒓𝒊𝒆𝒏𝒅.
+            𝑭𝒊𝒓𝒔𝒕 𝒐𝒇 𝒂𝒍𝒍, 𝑰 𝒘𝒂𝒏𝒕 𝒚𝒐𝒖 𝒕𝒐 𝒌𝒏𝒐𝒘 𝒕𝒉𝒂𝒕 𝒚𝒐𝒖 𝒂𝒓𝒆 𝒂𝒏 𝒂𝒎𝒂𝒛𝒊𝒏𝒈 𝒑𝒆𝒓𝒔𝒐𝒏, 𝒚𝒐𝒖'𝒓𝒆 𝒘𝒐𝒓𝒕𝒉 𝒊𝒕, 𝒚𝒐𝒖'𝒓𝒆 𝒗𝒂𝒍𝒖𝒂𝒃𝒍𝒆, 𝒂𝒏𝒅 𝒚𝒐𝒖 𝒂𝒓𝒆 𝒂 𝒗𝒆𝒓𝒚 𝒈𝒐𝒐𝒅 𝒑𝒆𝒓𝒔𝒐𝒏. 𝑰 𝒘𝒂𝒏𝒏𝒂 𝒕𝒉𝒂𝒏𝒌 𝒚𝒐𝒖 𝒇𝒐𝒓 𝒃𝒆𝒊𝒏𝒈 𝒎𝒚 𝒇𝒓𝒊𝒆𝒏𝒅 𝒂𝒏𝒅 𝒇𝒐𝒓 𝒔𝒊𝒎𝒑𝒍𝒚 𝒆𝒙𝒊𝒔𝒕𝒊𝒏𝒈 𝒊𝒏 𝒕𝒉𝒊𝒔 𝒘𝒐𝒓𝒍𝒅 𝒂𝒏𝒅 𝒌𝒏𝒐𝒘 𝒚𝒐𝒖. 𝒀𝒐𝒖 𝒂𝒓𝒆 𝒔𝒖𝒄𝒉 𝒂 𝒘𝒐𝒏𝒅𝒆𝒓𝒇𝒖𝒍 𝒘𝒐𝒎𝒂𝒏 𝒂𝒏𝒅 𝒔𝒐 𝒔𝒕𝒓𝒐𝒏𝒈 𝒇𝒐𝒓 𝒂 𝒈𝒊𝒓𝒍 𝒊𝒏 𝒉𝒆𝒓 𝟐𝟎𝒕𝒉 𝒃𝒅𝒂𝒚!
+            𝑻𝒉𝒊𝒏𝒈𝒔 𝒄𝒐𝒖𝒍𝒅 𝒉𝒂𝒑𝒑𝒆𝒏 𝒋𝒖𝒅 𝒊𝒏 𝒕𝒉𝒊𝒔 𝒍𝒊𝒇𝒆𝒕𝒊𝒎𝒆, 𝒓𝒆𝒚𝒏, 𝒂𝒏𝒅 𝒔𝒐𝒎𝒆𝒕𝒊𝒎𝒆𝒔 𝒘𝒆 𝒃𝒆𝒄𝒂𝒎𝒆 𝒑𝒂𝒓𝒂𝒏𝒐𝒊𝒅 𝒌𝒂𝒚 𝒘𝒂𝒍𝒂 𝒏𝒂𝒕𝒂 𝒌𝒂𝒃𝒂𝒍𝒐 𝒖𝒏𝒔𝒂 𝒂𝒕𝒐𝒏𝒈 𝒉𝒊𝒎𝒖𝒐𝒏. 𝒚𝒆𝒔! 𝑩𝒖𝒕 𝒏𝒐𝒘, 𝑰 𝒘𝒂𝒏𝒏𝒂 𝒕𝒆𝒍𝒍 𝒚𝒐𝒖 𝒕𝒉𝒂𝒕 𝒚𝒐𝒖 𝒂𝒓𝒆 𝒅𝒐𝒊𝒏𝒈 𝒋𝒖𝒔𝒕 𝒇𝒊𝒏𝒆. 𝑫𝒐 𝒏𝒐𝒕 𝒘𝒐𝒓𝒓𝒚 𝒕𝒐𝒐 𝒎𝒖𝒄𝒉 𝒂𝒃𝒐𝒖𝒕 𝒕𝒉𝒆 𝒕𝒉𝒊𝒏𝒈𝒔 𝒚𝒐𝒖 𝒄𝒂𝒏'𝒕 𝒄𝒐𝒏𝒕𝒓𝒐𝒍. 𝑰 𝒌𝒏𝒐𝒘 𝒕𝒉𝒂𝒕 𝑮𝒐𝒅 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒉𝒂𝒔 𝑯𝒊𝒔 𝒑𝒍𝒂𝒏𝒔 𝒇𝒐𝒓 𝒚𝒐𝒖 𝒂𝒏𝒅 𝒂𝒍𝒍 𝒚𝒐𝒖 𝒈𝒐𝒕𝒕𝒂 𝒅𝒐 𝒊𝒔 𝒕𝒐 𝒕𝒓𝒖𝒔𝒕 𝑯𝒊𝒎, 𝒇𝒖𝒍𝒍𝒚. 𝑳𝒊𝒇𝒆 𝒎𝒊𝒈𝒉𝒕 𝒈𝒆𝒕 𝒉𝒂𝒓𝒅 𝒑𝒆𝒓𝒐 𝒍𝒂𝒃𝒂𝒏 𝒍𝒂𝒏𝒈 𝒈𝒚𝒂𝒑𝒐𝒏. 𝑷𝒍𝒆𝒂𝒔𝒆 𝒑𝒖𝒅 𝒅𝒐𝒏'𝒕 𝒇𝒐𝒓𝒈𝒆𝒕 𝒕𝒉𝒂𝒕 𝒚𝒐𝒖 𝒉𝒂𝒗𝒆 𝒚𝒐𝒖'𝒓𝒆 𝒅𝒖𝒎𝒃 𝒇𝒓𝒊𝒆𝒏𝒅𝒔 𝒐𝒗𝒆𝒓 𝒉𝒆𝒓𝒆 𝒓𝒆𝒂𝒅𝒚 𝒕𝒐 𝒍𝒂𝒖𝒈𝒉 𝒘𝒊𝒕𝒉 𝒚𝒐𝒖 𝒂𝒏𝒅 𝒐𝒇𝒇𝒆𝒓 𝒐𝒖𝒓 𝒔𝒉𝒐𝒖𝒍𝒅𝒆𝒓𝒔 𝒇𝒐𝒓 𝒚𝒐𝒖 𝒕𝒐 𝒍𝒆𝒂𝒏 𝒐𝒏. 𝑰 𝒌𝒏𝒐𝒘 𝒕𝒂𝒂𝒔 𝒌𝒂 𝒂𝒏𝒅 𝒎𝒆𝒅𝒋𝒐 𝒍𝒊𝒔𝒐𝒅 𝒔𝒉𝒂 𝒏𝒐 𝒑𝒆𝒓𝒐 𝒖𝒏𝒔𝒂𝒐𝒏 𝒕𝒂 𝒎𝒂𝒏 𝒉𝒂𝒉𝒂𝒉. 
+            𝑩𝒂𝒔𝒕𝒂 𝒌𝒂𝒚 𝒏𝒂𝒂 𝒓𝒂 𝒎𝒊 𝒓𝒆𝒊𝒈𝒏, 𝒔𝒂𝒏𝒂 𝒑𝒂𝒌𝒂𝒊𝒏𝒊𝒏 𝒏𝒈 𝒄𝒂𝒌𝒆. 𝑺𝒂𝒓𝒂𝒑 𝒑𝒂 𝒏𝒂𝒎𝒂𝒏 𝒎𝒂𝒈𝒃𝒐𝒏𝒅𝒊𝒏𝒈 𝒏𝒈𝒂𝒚𝒐𝒏.
+            𝑴𝒂𝒐 𝒏𝒂 𝒕𝒐 𝒓𝒆𝒊𝒈𝒏, 𝒎𝒐𝒓𝒆 𝒄𝒉𝒊𝒌𝒂𝒔 𝒕𝒐 𝒄𝒐𝒎𝒆! 𝑳𝒆𝒕'𝒔 𝒉𝒂𝒗𝒆 𝒂 𝒍𝒊𝒍 𝒄𝒆𝒍𝒆𝒃 𝒕𝒐𝒈𝒆𝒕𝒉𝒆𝒓 𝒘𝒊𝒕𝒉 𝒕𝒉𝒆𝒎 𝒑𝒍𝒆𝒂𝒔𝒆. 
+            𝑳𝒐𝒗𝒆𝒍𝒐𝒕𝒔! 𝑯𝒂𝒗𝒆 𝒂 𝒈𝒓𝒆𝒂𝒕 𝒅𝒂𝒚!
+
         </div>
-      </div>
 
-      <script>
+        <div class="music-box">
+            <audio id="bgMusic" loop src="https://music.youtube.com/watch?v=QQXZyf0OJpI"></audio>
+            <p style="font-size: 0.8rem; opacity: 0.7;">kuan</p>
+        </div>
+    </div>
+
+    <script>
         document.getElementById('surpriseBtn').addEventListener('click', function() {
-          document.getElementById('secretNote').style.display = 'block';
-          this.style.display = 'none';
-        });
-      </script>
+            document.getElementById('secretNote').style.display = 'block';
+            this.style.display = 'none';
 
-    </body>
-    </html>
+            const music = document.getElementById('bgMusic');
+            music.volume = 0.4;
+            music.play().catch(error => console.log("Music autoplay blocked, waiting for interaction"));
+
+            for (let i = 0; i < 40; i++) {
+                createConfetti();
+            }
+        });
+
+        function createConfetti() {
+            const emojis = ['✨', '💖', '🌸', '🎂', '🎉', '🌟', '🦄'];
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            
+            confetti.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.animationDuration = (Math.random() * 2 + 2) + 's'; 
+            confetti.style.opacity = Math.random();
+            confetti.style.fontSize = Math.random() * 15 + 15 + 'px';
+
+            document.body.appendChild(confetti);
+
+            setTimeout(() => {
+                confetti.remove();
+            }, 4000);
+        }
+    </script>
+
+</body>
+</html>
